@@ -6,17 +6,13 @@ body {
 	margin: 5px 20px !important;
 }
 
-
 .ui.card {
 	position: relative;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	max-width: 250px;
 	min-height: 0px;
+	width: 196px !important;
 	background: #FFFFFF;
 	padding: 0em;
 	border: 1px solid #f6f6f6 !important;
@@ -42,20 +38,28 @@ body {
 		max-height: 200px;
 		object-position: 50% 50%;
 		object-position: 0 0;
-		background-color: #ffffff;
+		background-color: #ffffff !important;
 		img {
 			width: auto; 
 			height: 100%;
+		}
+	}
+	.content {
+		.description {
+			margin-top: .25em;
+			font-size: .7125em;
 		}
 	}	
 }
 
 .details {
 	.card {
+		width: 98vw !important;
 		max-width: fit-content;
 		box-shadow: none;
 		max-height: none;
 		pointer-events: none;
+		border: none !important;
 		.image {
 			width: 96vw;
 			height: 96vh;

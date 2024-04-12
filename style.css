@@ -56,7 +56,7 @@ body {
   font-size: 0.7125em;
 }
 
-.details .card {
+.custom_details .card {
   width: 98vw !important;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -67,12 +67,17 @@ body {
   pointer-events: none;
   border: none !important;
 }
-.details .card .image {
+.custom_details .card .image {
   width: 96vw;
   height: 96vh;
   max-height: none;
   text-align: left;
 }
-.details .card .content {
+.custom_details .card .content {
   display: none;
+}
+
+.custom_grid .card .image {
+  max-height: 200px;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

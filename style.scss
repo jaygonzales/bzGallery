@@ -52,7 +52,7 @@ body {
 	}	
 }
 
-.details {
+.custom_details {
 	.card {
 		width: 98vw !important;
 		max-width: fit-content;
@@ -69,5 +69,14 @@ body {
 		.content {
 			display: none;
 		}	
+	}
+}
+
+.custom_grid {
+	.card {
+		.image {
+			max-height: 200px;
+			overflow: hidden;
+		}
 	}
 }

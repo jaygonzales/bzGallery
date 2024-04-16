@@ -1,5 +1,5 @@
 $border-radius_default: 8px;
-$transition: all 0.5s ease;
+$transition: all 5s ease;
 $box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
 body {
@@ -20,14 +20,16 @@ body {
 	z-index: '';
 	border: none;
 	margin: 1em 0em;
-	transition: $transition;
-	box-shadow: none !important;
+	// box-shadow: none !important;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px !important;
 	overflow: hidden;
+	transition: $transition;
 	a {
 		cursor: pointer;
 	}
 	&:hover {
 		box-shadow: $box-shadow !important;
+		transform: none !important;
 	}
 	&:last-child {
 		margin-bottom: none;
@@ -49,6 +51,12 @@ body {
 			margin-top: .25em;
 			font-size: .7125em;
 		}
+		.artist {
+			font-size: 1em;
+			margin: 0.25em 0 .5em 0;
+			color: gray;
+			// font-family: monospace;
+		}
 	}	
 }
 
@@ -65,6 +73,13 @@ body {
 			height: 96vh;
 			max-height: none;
 			text-align: left;
+			box-shadow: $box-shadow;
+
+			img {
+				width: 100% !important;
+				height: 100% !important; 
+				object-fit: contain !important;
+			}
 		}
 		.content {
 			display: none;
@@ -74,9 +89,15 @@ body {
 
 .custom_grid {
 	.card {
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px !important;
 		.image {
 			max-height: 200px;
 			overflow: hidden;
+			img {
+				width: 100% !important;
+				height: 100% !important; 
+				object-fit: cover !important;
+			}
 		}
 	}
 }

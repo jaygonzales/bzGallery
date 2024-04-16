@@ -21,11 +21,11 @@ body {
   z-index: "";
   border: none;
   margin: 1em 0em;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px !important;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px !important;
   overflow: hidden;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 .ui.card a {
   cursor: pointer;
@@ -33,6 +33,8 @@ body {
 .ui.card:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+  -webkit-transform: none !important;
+          transform: none !important;
 }
 .ui.card:last-child {
   margin-bottom: none;
@@ -55,6 +57,11 @@ body {
   margin-top: 0.25em;
   font-size: 0.7125em;
 }
+.ui.card .content .artist {
+  font-size: 1em;
+  margin: 0.25em 0 0.5em 0;
+  color: gray;
+}
 
 .custom_details .card {
   width: 98vw !important;
@@ -72,12 +79,30 @@ body {
   height: 96vh;
   max-height: none;
   text-align: left;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.custom_details .card .image img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 .custom_details .card .content {
   display: none;
 }
 
+.custom_grid .card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px !important;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px !important;
+}
 .custom_grid .card .image {
   max-height: 200px;
   overflow: hidden;
+}
+.custom_grid .card .image img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }/*# sourceMappingURL=style.css.map */

@@ -24,8 +24,8 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px !important;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px !important;
   overflow: hidden;
-  -webkit-transition: all 5s ease;
-  transition: all 5s ease;
+  -webkit-transition: all 1s ease !important;
+  transition: all 1s ease !important;
 }
 .ui.card a {
   cursor: pointer;
@@ -58,9 +58,15 @@ body {
   font-size: 0.7125em;
 }
 .ui.card .content .artist {
+  height: 20px;
   font-size: 1em;
   margin: 0.25em 0 0.5em 0;
   color: gray;
+}
+.ui.card .content .header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .custom_details .card {

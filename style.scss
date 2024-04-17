@@ -1,5 +1,5 @@
 $border-radius_default: 8px;
-$transition: all 5s ease;
+$transition: all 1s ease;
 $box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
 body {
@@ -23,7 +23,7 @@ body {
 	// box-shadow: none !important;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px !important;
 	overflow: hidden;
-	transition: $transition;
+	transition: $transition !important;
 	a {
 		cursor: pointer;
 	}
@@ -44,6 +44,7 @@ body {
 		img {
 			width: auto; 
 			height: 100%;
+			
 		}
 	}
 	.content {
@@ -52,10 +53,15 @@ body {
 			font-size: .7125em;
 		}
 		.artist {
+			height: 20px;
 			font-size: 1em;
 			margin: 0.25em 0 .5em 0;
 			color: gray;
-			// font-family: monospace;
+		}
+		.header {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}	
 }
@@ -79,6 +85,7 @@ body {
 				width: 100% !important;
 				height: 100% !important; 
 				object-fit: contain !important;
+				// border: 5px solid brown !important;
 			}
 		}
 		.content {

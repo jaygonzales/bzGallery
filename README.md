@@ -1,2 +1,2 @@
-# bzGallery
+# bzGallery-FM
 Internal project
